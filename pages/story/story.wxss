@@ -1,0 +1,33 @@
+/* pages/story/story.wxss */
+page{
+  background-color: white;
+  box-shadow: -2px 2px 10px #ececec inset;
+}
+.body{
+  margin-left: auto;
+  margin-right: auto;
+  width: 92%;
+  flex-direction: column;
+}
+.title{
+  margin-top: 20rpx;
+  font-size: 45rpx;
+
+}
+.time_name{
+  margin-top:10rpx;
+  color: #888888;
+  font-size: 30rpx;
+}
+.img{
+   margin-top: 20rpx;
+}
+.img image{
+  height: 380rpx;
+  width: 690rpx;
+}
+.story_text{
+  margin-top: 10rpx;
+  font-size: 34rpx;
+  color: #8a8b8c;
+}

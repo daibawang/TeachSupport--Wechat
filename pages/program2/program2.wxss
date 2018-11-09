@@ -1,0 +1,71 @@
+/* pages/program/program.wxss */
+
+.body{
+ flex-direction: column;
+}
+.top{
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  background-color: #139AFF;
+}
+.im{
+padding-left: 5rpx;
+height: 20rpx;
+width: 30rpx;
+margin-left: 15rpx;
+}
+.input{
+  margin: auto;
+  width: 85%;
+  height: 60rpx;
+  background-color: white;
+  border-radius: 35rpx;
+  text-align: center;
+  padding-top: 1%;
+  margin-bottom: 15rpx;
+  font-size: 24rpx;
+}
+.input text{
+ font-size: 28rpx;
+ color:#bcbcbc;
+}
+.page__bd{
+    height: 100%;
+}
+.page__bd{
+    padding-bottom: 0;
+}
+
+.view6_1 {
+  margin-bottom: 20rpx;
+  background-color: white;
+  height: 180rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+.detail1_bar{
+  height: 230rpx;
+  background: white;
+}
+.detail_text{
+margin-left: 25rpx;
+padding-top: 10rpx;
+}
+.detail_text2{
+margin-left: 25rpx;
+margin-top: 12rpx;
+font-size: 25rpx;
+color: #aeaeaf;
+line-height: 45rpx;
+}
+
+.v1{
+  background-color: #F8F7FA;
+}
+.weui-tab{position:relative;height:100%}
+.weui-tab__pane{
+  box-sizing:border-box;
+  height:100%;overflow:auto;
+  -webkit-overflow-scrolling:touch}

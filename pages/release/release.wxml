@@ -1,0 +1,45 @@
+<!--pages/release/release.wxml-->
+<form bindsubmit='formsubmit'>
+    <view class='page'>
+        <view class='body'>
+            <view class='title'>
+                <input name="btinput" placeholder='请输入标题'></input>
+            </view>
+            <view class='xian'></view>
+            <view class='msg'>
+                <textarea name="nrinput" placeholder='此时此刻在想什么……' maxlength='1000' bindinput="inputs">
+                    <!--默认字数多少-->
+                    <text class="MaxdNumber">{{MaxdNumber|0}}/{{max}}</text>
+                </textarea>
+            </view>
+            <view class='pictures'>
+                <view class="weui-uploader__bd">
+                    <view class="weui-uploader__files" id="uploaderFiles">
+                        <block wx:for="{{files}}" wx:key="*this">
+                            <view class="weui-uploader__file" bindtap="previewImage" id="{{item}}">
+                                <image class="weui-uploader__img" style='width:120rpx;height:120rpx' src="{{item}}" mode="aspectFill" />
+                            </view>
+                        </block>
+                    </view>
+
+                    <view class="weui-uploader__input-box" style='margin-left:10rpx'>
+                        <image src='../images/cicle7.png' class='jiaimage'></image>
+                        <image class="weui-uploader__img" src="" mode="aspectFill" />
+                        <view class="weui-uploader__input" bindtap="chooseImage"></view>
+                    </view>
+                </view>
+            </view>
+            <view class='address'>
+                <view class='address_img'>
+                    <image src='../images/address.png'></image>
+                </view>
+                <!--地址-->
+                <text name='s_place'>{{address}}</text>
+            </view>
+        </view>
+
+        <view class='viewButton'>
+            <button formType='submit' class='button' hover-class='button-hover'  >发布故事</button>
+        </view>
+    </view>
+</form>

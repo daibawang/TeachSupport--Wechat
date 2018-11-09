@@ -1,0 +1,49 @@
+<!--pages/organizaiton/organization.wxml-->
+<view class='detail1_body'>
+  <view class='detail1_bar2'>
+    <view class='detail_text'>{{prcontact.or_name}}</view>
+    <view class='detail_text2'>
+      <view class='name3'>
+        <image src='../images/nz.png'></image>
+        <text>{{prcontact.fonudingtime}}</text>
+      </view>
+      <view class='name4'>
+        <image src='../images/dd.png'></image>
+        <text>{{prcontact.or_place}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='detail1_extra'>
+    <view class='detail_text'>
+      <view class='blue'></view> 组织简介</view>
+    <view class='detail_text3'>{{prcontact.information}}</view>
+  </view>
+  <view class='tar5'>
+    <view class='detail_text'>
+      <view class='blue'></view>联系方式</view>
+    <view class='detail_left'>
+      <view class='name5'>
+        <image src='../images/xx.png'></image>
+        <text>{{ prcontact.or_email}}</text>
+      </view>
+      <view class='name5'>
+        <image src='../images/wx.png'></image>
+        <text>{{ prcontact.or_wecharnumber}}</text>
+      </view>
+    </view>
+    <view class='detail_right'>
+      <view class='name5'>
+        <image src='../images/dh.png'></image>
+        <text>{{ prcontact.seatnumber}}</text>
+      </view>
+      <view class='name5'>
+        <image src='../images/wb.png'></image>
+        <text>{{ prcontact.or_blognumber}}</text>
+      </view>
+      <view class='name5'>
+        <image src='../images/wl.png'></image>
+        <text>{{ prcontact.or_officialwebsite}}</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,96 @@
+/* pages/myprogram/myprogram.wxss */
+/* pages/program/program.wxss */
+
+.body{
+ flex-direction: column;
+}
+.top{
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  background-color: #139AFF;
+}
+.im{
+padding-left: 5rpx;
+height: 20rpx;
+width: 30rpx;
+margin-left: 15rpx;
+}
+.input{
+  margin: auto;
+  width: 85%;
+  height: 60rpx;
+  background-color: white;
+  border-radius: 35rpx;
+  text-align: center;
+  padding-top: 1%;
+  margin-bottom: 15rpx;
+  font-size: 24rpx;
+}
+.input text{
+ font-size: 28rpx;
+ color:#bcbcbc;
+}
+.page__bd{
+    height: 100%;
+}
+.page__bd{
+    padding-bottom: 0;
+}
+
+.view6_1 {
+  margin-bottom: 40rpx;
+  background-color: white;
+  height: 210rpx;
+}
+.detail1_bar{
+  height: 230rpx;
+  background: white;
+  border: 1rpx solid white;
+  float: left;
+  width: 80%;
+}
+.detail1_bar2{
+ background: white;
+ height: 230rpx;
+border: 1rpx solid white;
+text-align: 10rpx;
+}
+.detail1_bar2_text{
+  border:  1rpx solid white;
+  margin-top: 30rpx;
+}
+.detail1_bar2_text text{
+  margin-top: 10rpx;
+  font-size: 0.7em;
+  color: #F4F4F4;
+}
+.detail1_bar2_text text.active{
+  color: #EEEE00;
+}
+.detail1_bar2_text text.active1{
+  color: #6BB92F;
+}
+.detail1_bar2_text text.active2{
+  color: red;
+}
+.detail_text{
+margin-left: 25rpx;
+padding-top: 10rpx;
+}
+.detail_text2{
+margin-left: 25rpx;
+margin-top: 12rpx;
+font-size: 25rpx;
+color: #aeaeaf;
+line-height: 45rpx;
+}
+
+.v1{
+  background-color: #F8F7FA;
+}
+.weui-tab{position:relative;height:100%}
+.weui-tab__pane{
+  box-sizing:border-box;
+  height:100%;overflow:auto;
+  -webkit-overflow-scrolling:touch}

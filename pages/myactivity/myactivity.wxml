@@ -1,0 +1,25 @@
+<!--pages/activity/activity.wxml-->
+<view class='body'>
+                <view class='v4' wx:for="{{program2}}">
+                    <view class='v4_1'>
+                        <view class='v4_1_1'>
+                            <image src='{{userInfo.avatarUrl}}' class='image4'></image>
+                        </view>
+                        <view class='v4_1_2'>
+                            <view style='font-size:30rpx; margin-top:14rpx;'>{{userInfo.nickName}}</view>
+                            <view style='font-size:18rpx;color:#7e7d7d;'>{{item.s_time}}小时前</view>
+                        </view>
+                    </view>
+                    <view class='v4_2'>
+                        <image src='https://www.bcuvote.top/TeacherSupport/upload/{{item.s_img}}' class='images5'></image>
+                    </view>
+                    <view class='v4_3'>
+                        <view style='font-size:30rpx;color:#696969;'>{{item.s_title}}</view>
+                    </view>
+                    <view class='v4_4'>
+                        <view style='font-size:24rpx;color:#5da0fb;padding-left: 34rpx;'>{{item.s_place}}</view>
+                        <image src='../images/dz.png' style='height:29rpx;width:29rpx; padding-right:30rpx;'></image>
+                        <view class='xian'></view>
+                    </view>
+                </view>
+</view>

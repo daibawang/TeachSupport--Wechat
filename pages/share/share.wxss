@@ -1,0 +1,20 @@
+/* pages/share/share.wxss */
+.canvass{
+  height: 1050rpx;
+  width: 744rpx;
+}
+.share{
+float: left;
+margin-top: 10rpx;
+margin-left: 120rpx;
+border: 2rpx #62CCFF solid;
+background-color: #FFF;
+color: #62CCFF;
+}
+.backimg{
+float: right;
+margin-top: 10rpx;
+margin-right: 120rpx;
+background-color: #62CCFF;
+color: #fff;
+}

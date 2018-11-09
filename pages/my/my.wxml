@@ -1,0 +1,121 @@
+<!--index.wxml-->
+<view class='top'>
+  <view class='top_1'>
+    <view class='top_lft'>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <view class='top_rt'>
+        <view class='name'>
+          <text>{{userInfo.nickName}}</text>
+        </view>
+        <view class='name_1'>
+          <text class='adr'>参加了{{hdcs}}次支教活动</text>
+          <text class='adr1' bindtap='adr1'>去炫耀</text>
+        </view>
+      </view>
+    </view>
+    <view class='j' style='padding-left:110rpx;border:0;' bindtap='changetomyindex'>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+  </view>
+  <view class='top_2'>
+    <view class='top_2_1' bindtap='top_2_1'>
+      <view class='top2_11'>
+        <text>{{dznum}}</text>
+      </view>
+      <view class='top2_12'>
+        <text>点赞</text>
+      </view>
+    </view>
+    <view class='top_2_1' bindtap='changetoFriend'>
+      <view class='top2_11'>
+        <text>{{gznum}}</text>
+      </view>
+      <view class='top2_12' >
+        <text>关注数</text>
+      </view>
+    </view>
+    <view class='top_2_1' bindtap='changetoFans'>
+      <view class='top2_11'>
+        <text>{{fsnum}}</text>
+      </view>
+      <view class='top2_12'>
+        <text>粉丝数</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="body">
+  <view class="bar" bindtap='changetohd'>
+    <view class='bar_1'>
+      <image src="../images/my_1.png"></image>
+    </view>
+    <view class='j'>
+      <text>我的申请</text>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+  </view>
+  <view class="bar" bindtap='changetojl'>
+    <view class='bar_1'>
+      <image src="../images/my_2.png"></image>
+    </view>
+    <view class='j'>
+      <text>我的简历</text>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+  </view>
+  <view class="bar" bindtap='changetoZan'>
+    <view class='bar_1'>
+      <image src="../images/my_3.png"></image>
+    </view>
+    <view class='j'>
+      <text>我的点赞</text>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+  </view>
+  <view class="bar" bindtap='changetoActivity'>
+    <view class='bar_1'>
+      <image src="../images/my_4.png"></image>
+    </view>
+    <view class='j'>
+      <text>我的发布</text>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+  </view>
+  <view class="bar" bindtap='changetohd'>
+    <view class='bar_1'>
+      <image src="../images/my_5.png"></image>
+    </view>
+    <view class='j'>
+      <text>我的支教</text>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+  </view>
+  <view class="bar" bindtap='changetoFriend'>
+    <view class='bar_1'>
+      <image src="../images/my_6.png"></image>
+    </view>
+    <view class='j'>
+    <text>我的好友</text>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+  </view>
+  <view class="bar" bindtap='changetoqu' style='margin-top:20rpx;'>
+    <view class='bar_1'>
+      <image src="../images/my_7.png"></image>
+    </view>
+    <view class='j'>
+      <text>问题反馈</text>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+  </view>
+  <view class="bar" bindtap='changetohd'>
+    <!-- <view class='bar_1'>
+      <image src="../images/my_8.png"></image>
+    </view>
+    <view class='j'>
+      <text>客服中心</text>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view> -->
+  </view>
+
+</view>

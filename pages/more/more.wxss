@@ -1,0 +1,12 @@
+/* pages/more/more.wxss */
+.body{
+  width: 100%;
+  position: relative;
+}
+ .code{
+  top: 400rpx;
+  margin-left: 250rpx;
+  width: 250rpx;
+  height: 250rpx;
+  position: absolute;
+}

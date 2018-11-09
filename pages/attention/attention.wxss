@@ -1,0 +1,80 @@
+/* pages/attention/attention.wxss */
+/* pages/friends/friends.wxss */
+page{
+  background-color: #F3F5F9;
+}
+.body{
+  box-shadow: inset 0px 2rpx 8rpx #eeeeee;
+  flex-direction: column;
+  background: white;
+}
+.friend{
+padding-bottom: 2rpx;
+}
+.friend_top{
+display: flex;
+}
+.friend_img{
+  margin-top: 35rpx;
+  margin-left: 30rpx;
+}
+.friend_img image{
+  height: 130rpx;
+  width: 130rpx;
+}
+.friend_item{
+  margin-top: 32rpx;
+  position: relative;
+  margin-left: 20rpx;
+}
+.friendr_name{
+font-size: 34rpx;
+}
+.friendr_number{
+  font-size: 26rpx;
+  color: #a9a9a9;
+}
+.friend_fans{
+  font-size: 26rpx;
+  color: #a9a9a9;
+}
+.xian{
+  border-top:0.3rpx solid #E7E7E7;
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20rpx;
+}
+.friebd_select{
+  position: relative;
+  margin-left: 170rpx;
+   flex-direction: column;
+   padding-top: 20rpx;
+}
+.friebd_select button{
+  font-size: 15rpx;
+  color: white;
+  border-radius: 5rpx;
+  background-color: #139AFF;
+  box-shadow: 0rpx 0rpx 5rpx #139AFF;
+  margin-top: 10rpx;
+}
+
+.friend_attention_border{
+  margin-top:60rpx;
+  border: 1rpx solid #989898;
+  color: #989898;
+  width: 160rpx;
+  font-size: 30rpx;
+  letter-spacing: 5rpx;
+  text-align: center;
+  border-radius: 5rpx;
+  margin-left: -30rpx;
+}
+.queren{
+  text-align: center;
+  font-size: 25rpx;
+  color: #989898;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}

@@ -1,0 +1,76 @@
+<view class="pages">
+    <view class="pages__bd">
+        <view class="weui-tab">
+            <view class="weui-navbar" style='padding-top:0rpx'>
+                <block wx:for="{{tabs}}" wx:key="*this">
+                    <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'item_on' : ''}}" bindtap="tabClick">
+                        <view class="weui-navbar__title">{{item}}</view>
+                    </view>
+                </block>
+                <view class="slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+            </view>
+            <view class="weui-tab__panel">
+                <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+                <view class='detail1_body'>
+                  <view class='detail1_bar'>
+                  <view class='detail_text'>{{prname.re_title}}</view>
+                  <view class='detail_text2'><text>截止时间：{{prname.re_deadline}}\n服务时间：{{prname.re_servicetime}}\n服务地点：{{prname.re_serviceplace}}</text></view>   
+                  </view>
+                  <view class='detail1_extra'>
+                  	<view class='detail_text'><view class='blue'></view> 工作内容</view>
+                  	<view class='detail_text3'>{{prname.re_jobcontent}}</view>
+                  </view>
+                                    <view class='detail1_extra'>
+                  	<view class='detail_text'><view class='blue'></view> 待遇收获</view>
+                  	<view class='detail_text3'>{{prname.re_treatment}}</view>
+                  </view>
+                                    <view class='detail1_extra'>
+                  	<view class='detail_text'><view class='blue'></view> 报名条件</view>
+                  	<view class='detail_text3'>{{prname.re_condition}}</view>
+                  </view>
+                </view>
+				
+
+                </view>
+                <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+                  <view class='detail1_body'>
+                  <view class='detail1_bar2'>
+                  <view class='detail_text'>{{prcontact.or_name}}</view>
+                  <view class='detail_text2'>
+                  <view class='name3'><image src='../images/nz.png'></image><text>{{prcontact.fonudingtime}}</text></view>
+      <view class='name4'><image src='../images/dd.png'></image><text>{{prcontact.or_place}}</text></view>
+                  </view>   
+                  </view>
+                  <view class='detail1_extra'>
+                  <view class='detail_text'><view class='blue'></view> 组织简介</view>
+                  <view class='detail_text3'>{{prcontact.information}}</view>
+                  </view>
+                   <view class='tar5'>
+                     <view class='detail_text'><view class='blue'></view>联系方式</view>
+                     <view class='detail_left'>
+                       <view class='name5'><image src='../images/xx.png'></image><text>{{ prcontact.or_email}}</text></view>
+                       <view class='name5'><image src='../images/wx.png'></image><text>{{ prcontact.or_wecharnumber}}</text></view>
+                     </view>
+                     <view class='detail_right'>
+                      <view class='name5'><image src='../images/dh.png'></image><text>{{ prcontact.seatnumber}}</text></view>
+                      <view class='name5'><image src='../images/wb.png'></image><text>{{ prcontact.or_blognumber}}</text></view>
+                      <view class='name5'><image src='../images/wl.png'></image><text>{{ prcontact.or_officialwebsite}}</text></view>
+                     </view>
+                  </view> 
+                </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+	<action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetbindchange">
+                    	<view class='radiogroup'>
+                      	<radio-group bindchange="radioCheckedChange">
+                              <image src='../images/tj.png' class='img1' bindtap='tj'></image>
+                              <image src='../images/xg.png' class='img2' bindtap='xg'></image>
+                    	</radio-group>
+                      </view>
+                	</action-sheet>
+                <view class='viewButton' hidden='{{activeIndex != 0}}'>
+     				<button class='button' hover-class='button-hover' bindtap="actionSheetTap" >申请报名</button>
+             	</view>

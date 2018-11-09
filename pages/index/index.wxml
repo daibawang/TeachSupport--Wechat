@@ -1,0 +1,52 @@
+<scroll-view class='view1'>
+    <view class='view2'>
+        <view class='bgview' bindtap='v3_2'>
+            <image src='../images/area.png' class='img2'></image>
+            <text class='text1'>{{area}}</text>
+        </view>
+        <input class='input' placeholder='搜索' placeholder-class='inputpla'></input>
+    </view>
+    <view class='view5'>
+        <view class='view4'>
+            <view class='view4_1' bindtap='v4_1'>
+                <image src='../images/work.png' class='imgwork'></image>
+                <text class='text2'>长期支教</text>
+            </view>
+            <view class='view4_2' bindtap='v4_2'>
+                <image src='../images/date.png' class='imgwork'></image>
+                <text class='text2'>短期支教</text>
+            </view>
+            <view class='view4_3' bindtap='v4_3'>
+                <image src='../images/tw.png' class='imgwork'></image>
+                <text class='text2'>支教组织</text>
+            </view>
+            <view class='view4_4' bindtap='v4_4'>
+                <image src='../images/table.png' class='imgwork'></image>
+                <text class='text2'>更多操作</text>
+            </view>
+        </view>
+        <view class='view6'>
+            <view class='view7'>
+                <text class='text_v7'>新闻动态</text>
+            </view>
+            <view class='view6_1' wx:for="{{array}}" wx:key='' bindtap='v6_1' data-id='{{item.nid}}'>
+                <view class='v1'>
+                    <view class='v1_1'>
+                        <text class='text_v6_1'>{{item.news_title}}\n</text>
+                        <text class='text_v6_2'>{{item.news_content}}</text>
+                    </view>
+                    <view class='v1_2'>
+                        <image style='height:160rpx;width: 250rpx;margin-top: 20rpx;' src='https://www.bcuvote.top/TeacherSupport/upload/{{item.news_img}}'></image>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</scroll-view>
+
+<!--<view class='image_v6'>
+        
+     </view> 
+       <view class='image_v62'>
+       <image  src=''></image>
+       </view>-->

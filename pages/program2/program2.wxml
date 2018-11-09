@@ -1,0 +1,28 @@
+<view class='page'>
+  <view class='body'>
+    <!--搜索-->
+    <navigator url='../search/search'>
+      <view class='top'>
+        <view class='input'>
+          <text>搜索</text>
+        </view>
+      </view>
+    </navigator>
+    <view class="page">
+      <view class="page__bd">
+        <view class="weui-tab">
+          <view class="weui-tab__pane">
+                <view class='view6_1' wx:for="{{array}}" wx:key='' bindtap='v6_1' bindtap='bindor' data-oid='{{item.oid}}'>
+                  <view class='detail1_bar'>
+                    <view class='detail_text'>{{item.or_name}}</view>
+                    <view class='detail_text2'>
+                      <text>成立时间：{{item.fonudingtime}}\n详细地址：{{item.or_place}}\n</text>
+                    </view>
+                  </view>
+                </view>
+            </view>
+          </view>
+        </view>
+      </view>
+  </view>
+</view>

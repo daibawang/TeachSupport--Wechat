@@ -1,0 +1,36 @@
+/* pages/name/name.wxss */
+page{
+  background: #F5F5F5;
+}
+.tar1{
+  margin-top: 10rpx;
+  background-color:white;
+}
+.tar2{
+  margin-top: 20rpx;
+  background-color:white;
+}
+.tar3{
+  margin-top: 20rpx;
+  background-color:white;
+}
+.tar4{
+  margin-top: 50rpx;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.chuan{
+   border-bottom: 1rpx solid #bcbcbc;
+   height: 80rpx;
+   padding-left: 25rpx;
+   line-height: 80rpx;
+   color: #bcbcbc;
+}
+.chuan2{
+   margin-top: 35rpx;
+  padding-left: 25rpx;
+}
+.img_bd
+{margin-bottom:-4px;
+overflow:hidden}

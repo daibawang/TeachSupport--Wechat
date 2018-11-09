@@ -1,0 +1,39 @@
+<!--pages/name/name.wxml-->
+<view class='body'>
+<form bindsubmit='formSubmit'>
+  <view class='tar1'>
+      <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">支教项目</view>
+                <input class="weui-cell__ft weui-cell__ft_in-access"  name='activityname' value='{{first.activityname}}'>{{first.activityname}}</input>
+            </view>
+      </view>
+
+      <view class="weui-cells weui-cells_after-title">
+            <view  class="weui-cell weui-cell_access" >
+                <view class="weui-cell__bd">组织名称</view>
+             
+                 <input class="weui-cell__ft weui-cell__ft_in-access"  name='organizationname' value='{{first.organizationname}}'>{{first.organizationname}}</input>
+            </view>
+        </view>
+         <view class="weui-cells weui-cells_after-title">
+            <view  class="weui-cell weui-cell_access" >
+                 <view class="weui-cell__bd">支教地点</view>
+             
+                 <input class="weui-cell__ft weui-cell__ft_in-access"  name='teaplace' value='{{first.teaplace}}'>{{first.teaplace}}</input>
+            </view>
+        </view>
+  </view>
+  <view class='tar2'>
+        <view class="bjc">
+            <view  class="bjcell" >
+                <view class="bj">支教描述</view>
+                <input class="weui-cell__ft weui-cell__ft_in-access"  name='teadescribe' value='{{first.teadescribe}}'>{{first.teadescribe}}</input>
+            </view>
+        </view>
+  </view>
+  <view class='tar4'>
+    <button formType='submit' style='background-color:#139AFF' ><text style='color:white'>保存</text></button>
+  </view>   
+</form>                       
+</view>

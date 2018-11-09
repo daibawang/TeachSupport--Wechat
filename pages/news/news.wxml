@@ -1,0 +1,6 @@
+  <view class='body'>
+  <view class='newstip'><text>{{news.news_title}}</text></view>
+  <view class='newsfrom'>{{news.from1}}\t\t{{news.news_time}}</view>
+  <view class='newsimage'><image src='https://www.bcuvote.top/TeacherSupport/upload/{{news.news_img}}'></image></view>
+  <view class='newstext'><text>{{news.news_content}}</text></view>
+  </view>

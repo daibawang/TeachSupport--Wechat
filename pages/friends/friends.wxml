@@ -1,0 +1,26 @@
+<!--pages/friends/friends.wxml-->
+<view class='page'>
+  <view class='body'>
+      <view class='friend'  wx:for="{{friends}}" wx:key='' >
+      <view class='friend_top'>
+          <view class='friend_img'><image src='{{item.headimg}}'></image></view>
+          <view class='friend_item'>
+            <view class='friend_name'><text>{{item.nickname}}</text></view>
+            <view class='friendr_number'><text>参加了{{item.teasum}}次支教活动</text></view>
+            <view class='friend_fans'><text>{{item.fansum}}个粉丝</text></view>
+          </view>
+          <view class='friebd_select'>
+          <view class='friend_attention_border' type="default" bindtap="actionSheetTap" data-id='{{item.aaid}}'>取消关注</view>
+          </view>
+        </view>
+          <view class='xian'></view>
+      </view>
+    <action-sheet hidden="{{actionSheetHidden}}" bindtap="actionSheetChange1">
+    <view class='queren'>确定不再关注此人？</view>
+    <block wx:for="{{actionSheetItems}}">
+        <action-sheet-item class="items" bindtap="actionSheetChange" data-id='{{item.aaid}}' data-index="{{index}}">{{actionSheetItems[index]}}</action-sheet-item>
+    </block>
+</action-sheet>
+
+</view>
+</view>

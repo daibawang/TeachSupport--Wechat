@@ -1,0 +1,34 @@
+<!--pages/myprogram/myprogram.wxml-->
+<view class='page'>
+  <view class='body'>
+    <view class="page">
+      <view class="page__bd">
+        <view class="weui-tab">
+          <view class="weui-tab__pane">
+            <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+              <view class='v1'>
+                <view class='view6_1' wx:for="{{array}}" wx:key='' bindtap='bindshare'>
+                  <view class='detail1_bar'>
+                    <view class='detail_text'>{{item.re_title}}</view>
+                    <view class='detail_text2'>
+                      <text>截止时间：{{item.re_deadline}}\n服务时间：{{item.re_servicetime}}\n服务地点：{{item.re_serviceplace}}</text>
+                    </view>
+                  </view>
+                  <view class='detail1_bar2'>
+                    <view class='detail1_bar2_text'>
+                      <text class="{{item.re_flat==0?'active':''}}">待审核\n</text>
+                      <text class="{{item.re_flat==1?'active1':''}}">已通过\n</text>
+                       <text class="{{item.re_flat==2?'active2':''}}">未通过</text>
+                  </view>
+                  </view>
+                </view>
+              </view>
+            </view>
+           
+          </view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+</view>

@@ -1,0 +1,126 @@
+
+.body{
+  flex-direction: column;
+  width: 100%;
+}
+.head{
+   margin-right: auto;
+   margin-left: auto;
+   width: 92%;
+}
+.name{
+   border-bottom: 4rpx solid #E2E2E2;
+   border-bottom-style: dashed;
+   height: 320rpx;
+}
+.name1 text{
+  font-size: 60rpx;
+  font-family: 微软雅黑;
+  float: left;
+}
+.name1 image{
+   width: 65rpx;
+  height: 65rpx;
+  margin-left: 15rpx;
+ margin-top: 25rpx;
+}
+.name2{
+  color: #7b7b7b;
+}
+.name2 text{
+  font-size: 30rpx;
+  margin-top: 45rpx;
+}
+.name3{
+height: 65rpx;
+line-height: 65rpx;
+margin-left: -20rpx;
+margin-top: 5rpx;
+font-size: 35rpx;
+color: #8e8e8e;
+}
+.name3 image{
+  width: 65rpx;
+  height: 65rpx;
+  float: left;
+  margin-right: 15rpx;
+}
+.name4{
+height: 55rpx;
+line-height: 55rpx;
+margin-left: -12rpx;
+font-size: 30rpx;
+color: #8e8e8e;
+}
+.name4 image{
+  width: 60rpx;
+  height: 55rpx;
+  float: left;
+  margin-right: 15rpx;
+}
+
+
+.contact{
+  border-bottom: 4rpx solid #E2E2E2;
+  border-bottom-style: dashed;
+   height:300rpx;
+    width: 100%；
+}
+.contact1{
+  font-size: 40rpx;
+  font-family: 微软雅黑;
+  margin-top: 15rpx;
+
+}
+.contact2{
+  margin-top: 5rpx;
+  font-size: 30rpx;
+  color: #8e8e8e;
+  line-height: 50rpx;
+  float: left;
+}
+.contact3{
+  height: 65rpx;
+  margin-left: 620rpx;
+  margin-top: 100rpx;
+}
+.contact4{
+  height: 65rpx;
+  margin-left: 620rpx;
+  margin-top: 50rpx;
+}
+.image3{
+     width: 65rpx;
+    height: 65rpx;
+}
+.work{
+  border-bottom: 4rpx solid #E2E2E2;
+   border-bottom-style: dashed;
+   height: 260rpx;
+}
+.work1{
+  font-size: 40rpx;
+  font-family: 微软雅黑;
+  margin-top: 15rpx;
+}
+.work2{
+  margin-top: 5rpx;
+  font-size: 30rpx;
+  color: #8e8e8e;
+  line-height: 50rpx;
+  float: left;
+}
+
+.teach1{
+  font-size: 40rpx;
+  font-family: 微软雅黑;
+  margin-top: 50rpx;
+}
+.teach2{
+  margin-top: 25rpx;
+  font-size: 30rpx;
+  color: #8e8e8e;
+  line-height: 60rpx;
+  float: left;
+}
+

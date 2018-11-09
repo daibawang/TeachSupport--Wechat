@@ -1,0 +1,88 @@
+
+.wxSearch-section{
+  background-color: #62ccff;
+  height: 30px;
+  padding: 5px 10px;
+}
+.wxSearch-pancel{
+  display: flex;
+  flex-direction: row;
+  height: 20px;
+  margin-top: 5px;
+}
+.wxSearch-input{
+  height: 20px;
+  flex: 8; 
+  background-color: white;
+  padding: 0px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+.wxSearch-button{
+  margin-top: 3rpx;
+  margin-left: 5px;
+  height: 20px;
+  flex: 1;
+  color: gray;
+  font-size: 13px;
+  line-height: 20px;
+}
+.wxSearchTitle{
+  display: block;
+  padding: 10px 5px 5px 10px;
+  font-size: 12px;
+  text-align: center;
+}
+.wxSearchKeyList{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.wxSearchMindKeyItem{
+  padding: 10px 5px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  font-size: 14px;
+  color: cornflowerblue;
+}
+.wxSearchKeyItem{
+  flex: 0 0 20%;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid #eee;
+  margin: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.wxSearchHistoryItem{
+  padding: 10px 5px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+}
+.wxSearchHistoryItemText{
+  flex: 8;
+  font-size: 14px;
+}
+.wxSearchHistoryItemDel{
+  flex: 1;
+  font-size: 12px;
+  text-align: center;
+  padding: 3px 5px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+.wxSearchHistoryEmpty{
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  font-size: 12px;
+}
+.wxSearchDeleteAllBtn{
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 12px;
+}
+.wxSearchHistory{
+  background-color: white;
+}

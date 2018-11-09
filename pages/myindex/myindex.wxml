@@ -1,0 +1,125 @@
+<!--pages/myindex/myindex.wxml-->
+<view class='view1'>
+    <!-- 顶部背景 -->
+    <view class='view1_1'>
+        <image src='../images/toppp.png' class='images'></image>
+    </view>
+    <view class='view1_2'>
+        <view class='view1_2_1'>
+            <view class='view1_2_1_l'>
+                <text style="font-size:36rpx;">{{userInfo.nickName}}</text>
+            </view>
+            <view class='view1_2_1_r'>
+                <image src='{{userInfo.avatarUrl}}' class='image2'></image>
+            </view>
+        </view>
+        <view class='view1_2_2'>
+            <view class='view1_2_2_1'>
+                <view class='view1_2_2_1_1'>
+                    <text style="font-size:32rpx;">{{cznum}}</text>
+                    <text style="font-size:25rpx; color:#8a8a8a">超赞</text>
+                </view>
+                <view class='view1_2_2_1_1'>
+                    <text style="font-size:32rpx;">{{gznum}}</text>
+                    <text style="font-size:25rpx; color:#8a8a8a">关注数</text>
+                </view>
+                <view class='view1_2_2_1_1'>
+                    <text style="font-size:32rpx;">{{fsnum}}</text>
+                    <text style="font-size:25rpx; color:#8a8a8a">粉丝数</text>
+                </view>
+            </view>
+
+        </view>
+    </view>
+
+    <view class='view1_3'>
+        <view class='view1_3_1'>
+            <text style="font-size:26rpx; color:#8a8a8a">参加了{{zjnum}}次支教活动</text>
+            <image src='../images/jt.png' class='image3' bindtap='changetoActivity'></image>
+        </view>
+    </view>
+
+    <radio-group class='view2_1' bindchange="radioCheckedChange">
+    <view class='radio1'>
+        <label class="{{radioCheckVal==0?'active':''}}">
+            <text class='text'>足迹</text>
+            <radio value="0" hidden="true"></radio>
+        </label>
+    </view>
+    <view class='radio1'>
+        <label class="{{radioCheckVal==1?'active':''}}">
+            <text class='text'>故事</text>
+            <radio value="1" hidden="true"></radio>
+        </label>
+    </view>
+</radio-group>
+</view>
+
+
+<!--第二滚动部分 -->
+
+<swiper current="{{radioCheckVal}}" style="height:{{winHeight*2-296}}rpx; " class="swiper-box" duration="300" bindchange="bindChange">
+    <!-- 足迹 -->
+    <swiper-item>
+        <scroll-view scroll-y="true" style='height:{{winHeight*2-296}}rpx'>
+            <view class='view2_2_1' wx:for="{{program}}" wx:for-index="index">
+                <view class='view2_2_1_l'>
+                    <text style="font-size:48rpx;">{{item.time.date}}</text>
+                    <text style="font-size:24rpx;">{{item.time.month}}月</text>
+                </view>
+                <view class='view2_2_1_r'>
+                    <view class='view2_2_1_r_1'>
+                        <text style="width:562rpx; font-size:30rpx;">{{item.type}}</text>
+                        <view>
+                            <image src="../images/xjt.png" style="width:26rpx;height:16rpx; margin-top:20rpx; margin-right:40rpx;" bindtap='xjt'>
+
+                            </image>
+                            <view style='position:absolute;'>
+                                <view class="{{open?'display_show':'display_none'}}" style='font-size:16rpx;'>删除</view>
+                                <view class="{{open?'display_show':'display_none'}}" style='font-size:16rpx;'>取消</view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class='view2_2_1_r_2'>
+                        <image src='https://www.bcuvote.top/TeacherSupport/upload/{{item.img}}' style="width:116rpx;height:118rpx; margin-top:30rpx;"></image>
+                        <view class='view2_2_1_r_3' style="margin-left:36rpx;">
+                            <view class='v1'>
+                                <text style="width:448rpx; font-size:30rpx;">{{item.title}}</text>
+                            </view>
+                            <view>
+                                <text style="width:448rpx; font-size:26rpx; color:#a9a9a9;">{{item.place}}</text>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </scroll-view>
+    </swiper-item>
+    <!-- 故事 -->
+    <swiper-item>
+        <scroll-view scroll-y="true" style='height:{{winHeight-200}}px'>
+            <view class='v4' wx:for="{{program2}}">
+                <view class='v4_1'>
+                    <view class='v4_1_1'>
+                        <image src='{{userInfo.avatarUrl}}' class='image4'></image>
+                    </view>
+                    <view class='v4_1_2'>
+                        <view style='font-size:30rpx; margin-top:14rpx;'>{{userInfo.nickName}}</view>
+                        <view style='font-size:18rpx;color:#7e7d7d;'>{{item.s_time}}小时前</view>
+                    </view>
+                </view>
+                <view class='v4_2'>
+                    <image src='https://www.bcuvote.top/TeacherSupport/upload/{{item.s_img}}' class='images5'></image>
+                </view>
+                <view class='v4_3'>
+                    <view style='font-size:30rpx;color:#696969;'>{{item.s_title}}</view>
+                </view>
+                <view class='v4_4'>
+                    <view style='font-size:24rpx;color:#5da0fb;padding-left: 34rpx;'>{{item.s_place}}</view>
+                    <image src='../images/dz.png' style='height:29rpx;width:29rpx; padding-right:30rpx;'></image>
+                </view>
+            </view>
+        </scroll-view>
+    </swiper-item>
+</swiper>
+<image src='../images/fb.png' style='height:124rpx;width:124rpx; z-index:10;position: fixed;left: 322rpx; bottom: 80rpx;' bindtap='fabu'></image>

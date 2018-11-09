@@ -1,0 +1,43 @@
+<view class='all'>
+  <view class='body'>
+    <view class='head'>
+    <text></text>
+    <!--个人信息-->
+
+    <view class='name'>
+      <view class='name1'><text >{{name.name}}</text>
+     <!-- <navigator url='../name/name'><image bindt src='../images/c3.png' ></image> </navigator>-->
+     <image bindtap='changeToname' src='../images/c3.png' ></image> 
+      </view>
+      <view class='name2'> <text>{{name.sex==0?'男':'女'}}/{{age}}/{{name.area}}/{{name.nation==0?'汉':'其他'}}</text></view>
+      <view class='name3'><image src='../images/c1.png'></image><text>{{name.phonenumber}}</text></view>
+      <view class='name4'><image src='../images/c.png'></image><text>{{name.email}}</text></view>
+    </view>
+    
+    <!--联系方式-->
+    <view class='contact'>
+    <view class='contact1'><text>联系方式</text></view>
+    <view class='contact2'><text>{{name.workaddress}}\n家庭住址:\t\t{{name.homeaddress}}\n紧急联系人:\t\t{{name.emergancyrelationship}}\n紧急联系电话:\t\t{{name.emergancycontact}}</text></view><view class='contact3'><image bindtap='changeTocontact' src='../images/c3.png' class='image3'></image></view>
+    </view>
+    <!--工作经历-->
+   <view class='work'>
+        <view class='work1'>
+          <text>工作经历</text>
+        </view>
+        <!-- <image bindtap='changeTowork' src='../images/c4.png'></image> -->
+        <view class='work2'>
+          <text>支教项目:\t\t{{work.activityname}}\n组织名称:\t\t{{work.organizationname}}\n活动地点:\t\t{{work.teaplace}}</text>
+        </view>
+        <view class='contact4'>
+          <image bindtap='changeTocontact2' src='../images/c3.png' class='image3'></image>
+        </view>
+      </view>
+    <!--教育经历-->
+    <view class='teach'>
+      <view class='teach1'><text>教育经历</text></view>
+      <view class='teach2'><text>所在学校：{{teach.schoolname}}\n学历：{{teach.degree}} / 专业：{{teach.major}}</text></view>
+      <view class='contact4'><image bindtap='changeToteach' src='../images/c3.png' class='image3'></image></view>
+    </view>
+    </view>
+  </view>
+</view>

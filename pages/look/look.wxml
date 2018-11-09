@@ -1,0 +1,102 @@
+<!--pages/look/look.wxml-->
+<view class="swiper-tab">
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">我的点赞</view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">热门推荐</view>
+</view>
+<view class='body'>
+    <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight -30}}px" bindchange="bindChange">
+        <!-- part-1 我的关注-->
+        <!-- 我的动态 -->
+        <swiper-item>
+            <scroll-view scroll-y="true" style='height:{{winHeight -30}}px'>
+                <view class='swp_item' wx:for="{{array}}"  data-s_id='{{item.s_id}}'  >
+                    <!--头像和关注 -->
+                    <view class='item_top'>
+                        <view class='top_1'>
+                            <view class='top_lft'>
+                                <!--点击头像切换个人主页-->
+                                <image class="userinfo-avatar" src="{{item.headimg}}" background-size="cover" bindtap='headimage' data-a_id='{{item.aid}}'></image>
+                                <view class='top_rt'>
+                                    <view class='name' style='text-align:;'>
+                                        <text>{{item.nickname}}</text>
+                                    </view>
+                                    <view class='name_1'>
+                                        <!-- 几小时前关注 -->
+                                        <text class='adr'>{{item.s_time}}</text>
+                                    </view>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                    <!--图片显示部分（轮播图）  -->
+                    <view class='item_mid' bindtap='changetoStory' data-s_id='{{item.s_id}}'>
+                        <!-- 图片 -->
+                        <image class='myimg' src='https://www.bcuvote.top/TeacherSupport/upload/{{item.s_img}}'></image>
+                    </view>
+                    <!--底部标标题-->
+                    <view class='item_title'>
+                        <!-- 公益活动名 -->
+                        <text>{{item.s_title}}</text>
+                    </view>
+                    <!--点赞 -->
+                    <view class='item_down'>
+                        <!-- 发布地点 -->
+                        <view class='itm_down1'>
+                            <text>{{item.s_place}}</text>
+                        </view>
+                       
+                    </view>
+                </view>
+            </scroll-view>
+        </swiper-item>
+
+        <!--part-2 热门推荐 -->
+        <swiper-item>
+            <scroll-view scroll-y="true" style='height:{{winHeight -30}}px'>
+                <view class='swp_item' wx:for="{{array1}}"   data-s_id='{{item.s_id}}'>
+                    <!--头像和关注 -->
+                    <view class='item_top'>
+                        <view class='top_1'>
+                            <view class='top_lft'>
+                                <!--点击头像切换关注  -->
+                                <image class="userinfo-avatar" src="{{item.headimg}}" background-size="cover" bindtap='headimage' data-a_id='{{item.aid}}'></image>
+                                <view class='top_rt'>
+                                    <view class='name' style='text-align:;'>
+                                        <text>{{item.nickname}}</text>
+                                    </view>
+                                    <view class='name_1'>
+                                        <!-- 几小时前关注 -->
+                                        <text class='adr'>{{item.s_time}}</text>
+                                    </view>
+                                </view>
+                            </view>
+                        </view>
+                        <view class="top_2{{flag?'hide':''}}" bindtap="guanzhu" data-aaid="{{item.aid}}">
+                            <!-- 是否关注 -->
+                            <text>{{attention}}</text>
+                        </view>
+                    </view>
+                    <!--图片显示部分（轮播图）  -->
+                    <view class='item_mid' bindtap='changetoStory' data-s_id='{{item.s_id}}'>
+                        <image class='myimg' src='https://www.bcuvote.top/TeacherSupport/upload/{{item.s_img}}'></image>
+                    </view>
+                    <!--底部标标题-->
+                    <view class='item_title'>
+                        <!-- 公益活动名 -->
+                        <text>{{item.s_title}}</text>
+                    </view>
+                    <!--点赞 -->
+                    <view class='item_down'>
+                        <!-- 发布地点 -->
+                        <view class='itm_down1'>
+                            <text>{{item.s_place}}</text>
+                        </view>
+                        <view class='itm_down2'>
+                            <image bindtap='top_2' data-aid='{{item.aid}}' data-s_id='{{item.s_id}}' src="../images/item_{{item.cflag==0?'1':'2'}}.png" style='width:30rpx; height:30rpx;'></image>
+                        </view>
+                    </view>
+                </view>
+            </scroll-view>
+        </swiper-item>
+    </swiper>
+</view>

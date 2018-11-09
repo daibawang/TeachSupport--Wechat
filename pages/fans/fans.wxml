@@ -1,0 +1,24 @@
+<!--pages/attention/attention.wxml-->
+<view class='page'>
+  <view class='body'>
+  <view class='friend'  wx:for="{{friends}}" wx:key='this'>
+        <view class='friend_top'>
+          <view class='friend_img'><image src='{{item.headimg}}' class=''></image></view>
+          <view class='friend_item'>
+               <view class='friend_name'><text>{{item.nickname}}</text></view>
+               <view class='friendr_number'><text>参加了{{item.teasum}}次支教活动</text></view>
+            <view class='friend_fans'><text>{{item.fansum}}个粉丝</text></view>
+          </view>
+           <view class='friend_attention'>
+                  <view class="friend_border{{item.flag==0?'1':'2'}}" type="default" bindtap="edit" data-aaid="{{item.aaid}}" data-index="{{index}}">{{item.flag==0?"+关注":"互相关注"}}</view>
+           </view>
+      </view>
+          <view class='xian'></view>
+  </view>
+
+</view>
+</view>
+
+
+
+

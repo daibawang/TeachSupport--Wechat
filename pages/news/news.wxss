@@ -1,0 +1,36 @@
+/* pages/news/news.wxss */
+
+.body{
+  width: 100%;
+  background: white;
+}
+.newstip{
+  margin-top: 20rpx;
+  font-size: 1.2em;
+  text-align: center;
+  background: white;
+}
+.newsfrom{
+  margin-left: 40rpx;
+  margin-top: 40rpx;
+  font-size: 0.7em;
+  background: white;
+  color: #7b7b7b;
+}
+.newsimage{
+  margin-top: 30rpx;
+  text-align:center;
+  width: 740rpx;
+  height: 500rpx;
+}
+.newsimage image{
+  margin: auto 0rpx;
+}
+.newstext{
+  width: 680rpx;
+  margin-left: 40rpx;
+  margin-top: 40rpx;
+  font-size: 0.7em;
+  background: white;
+  color: #7b7b7b;
+}

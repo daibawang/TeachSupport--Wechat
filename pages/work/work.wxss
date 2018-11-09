@@ -1,0 +1,44 @@
+/* pages/name/name.wxss */
+page{
+  background: #F5F5F5;
+}
+.tar1{
+  margin-top: 10rpx;
+  background-color:white;
+}
+.tar2{
+  margin-top: 20rpx;
+  background-color:white;
+}
+.tar3{
+  margin-top: 20rpx;
+  background-color:white;
+}
+.bjc{
+padding-top: 12rpx;
+margin-left: 28rpx;
+margin-bottom: 40rpx;
+}
+.bjcell{
+position:relative;
+background-color:#fff;
+line-height:1.41176471;
+font-size:17px}
+.bj{
+  -webkit-box-flex:1;
+  -webkit-flex:1;
+  flex:1;
+  }
+.tar4{
+  margin-top: 50rpx;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ms{
+font-size: 25rpx;
+color: #aeaeaf;
+line-height: 45rpx;
+padding-right: 20rpx;
+padding-bottom: 10rpx;
+}

@@ -1,0 +1,69 @@
+{
+  "pages": [
+    
+    "pages/userinfo/userinfo",
+    "pages/index/index",
+    "pages/myzan/myzan",
+    "pages/friends/friends",
+    "pages/myindex/myindex",
+    "pages/myactivity/myactivity",
+    "pages/otherindex/otherindex",
+    "pages/look/look",
+    "pages/attention/attention",
+    "pages/fans/fans",
+    "pages/release/release",
+    "pages/myprogram/myprogram",
+    "pages/program/program",
+    "pages/program2/program2",
+    "pages/switchcity/switchcity",
+    "pages/search/search",
+    "pages/detail/detail",
+    "pages/creat/creat",
+    "pages/teach/teach",
+    "pages/contact/contact",
+    "pages/work/work",
+    "pages/name/name",
+    "pages/my/my",
+    "pages/logs/logs",
+    "pages/question/question",
+    "pages/news/news",
+    "pages/share/share",
+    "pages/resume/resume",
+    "pages/more/more",
+    "pages/story/story",
+    "pages/organization/organization"
+  
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#139aff",
+    "backgroundTextStyle": "light",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#139aff"
+  },
+  "tabBar": {
+    "color": "#919799",
+    "selectedColor": "#56a8fd",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "pages/images/tar1_1.png",
+        "selectedIconPath": "pages/images/tar1.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/look/look",
+        "iconPath": "pages/images/tar2.png",
+        "selectedIconPath": "pages/images/tar2_2.png",
+        "text": "看一看"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "pages/images/tar3.png",
+        "text": "我的",
+        "selectedIconPath": "pages/images/tar3_3.png"
+      }
+    ]
+  }
+}
